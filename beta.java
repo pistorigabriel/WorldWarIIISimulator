@@ -1,13 +1,21 @@
 package TrabalhoLPOO;
 
 class Alianca {
-    String bloco;
+    int numPaises;
+    String nome;
     String sede;
     double reserva;
     String[] coligacao;
-    Alianca (String nomeBloco) {
-        bloco = nomeBloco;
-    }
+    Alianca(String nome, Nacao sede) {
+        this.nome = nome;
+        this.sede = sede;
+        reserva = 400;
+        addPais(sede);
+    } 
+    public void addPais(Nacao pais)}
+    coligacao[numPaises] = pais;
+    numPaises+=1;
+    reserva+=100;
 }
 
 class Nacao extends Alianca {
