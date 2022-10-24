@@ -46,7 +46,7 @@ public enum Paises {
     HRV("HRV", "Croácia (Hrvatska)"),
     CUB("CUB", "Cuba"),
     DNK("DNK", "Dinamarca"),
-    DJI("DJI", "Djibuti"),
+    DJI("DJI", "Djibouti"),
     EGY("EGY", "Egito"),
     SLV("SLV", "El Salvador"),
     ARE("ARE", "Emirados Árabes Unidos"),
