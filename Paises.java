@@ -1,9 +1,11 @@
-package TrabalhoLPOO;
-//AFRICA 20
-//OCEANIA 3
-//AMERICA 21
-//ASIA 22
-//EUROPA 26
+/*
+ÁFRICA count= 20
+AMÉRICA count= 21
+ÁSIA count= 22
+EUROPA count= 26
+OCEANIA count= 3 
+*/
+
 public enum Paises {
     
     AFG("AFG", "Afeganistão", 3),
@@ -99,11 +101,12 @@ public enum Paises {
     URY("URY", "Uruguai", 2),
     UZB("UZB", "Uzbequistão", 3),
     VEN("VEN", "Venezuela", 2),
-    VNM("VNM", "Vietnã", 3),
+    VNM("VNM", "Vietnã", 3);
 
     private String nome;
     private String sigla;
     private int continente;
+    
     Paises(String nSigla, String nNome, int nContinente) {
         this.sigla = nSigla;
         this.nome = nNome;
@@ -118,6 +121,6 @@ public enum Paises {
         return sigla;
     }
     
-    public int getContinente{
+    public int getContinente(){
         return continente;
 }
