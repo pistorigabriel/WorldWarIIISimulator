@@ -116,6 +116,9 @@ public enum Paises {
     public String getNome() {
         return nome;
     }
+    public String getNomeBySigla(String bSigla) {
+        return bSigla.nome;
+    }
 
     public String getSigla() {
         return sigla;
