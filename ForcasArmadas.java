@@ -2,8 +2,9 @@ abstract class Aeronautica{
     private String nomeVeiculo;
     private double custo;
     private int poder;
-    void AtaqueAereo() {
-
+    void AtaqueAereo(Paises p){
+        if (resultado==1)
+            adicionaPais(Paises p);
     }
     String getInfo(){
 
