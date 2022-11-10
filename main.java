@@ -29,6 +29,27 @@ public class main {
                 System.out.println("Nome: " + p.getNome() +  " (" + p.getSigla() + ")");
         System.out.println("Escolha seu país-sede digitando a sigla dele:");
         System.out.println("Dica: Pense na sua sede de forma estratégica, seja por localização, tamanho ou outros motivos");
+        System.out.println("Agora é com você, ataque países inimigos e use sua reserva para fortalecer sua Aliança! Boa Sorte!");
+        while (true){
+            System.out.println("Qual ação você deseja tomar agora?\n");
+            System.out.println("1. Atacar outro país\n");
+            System.out.println("2. Comprar armamento\n");
+            System.out.println("3. Checar informações da Aliança\n");
+            System.out.println("4. Encerrar o jogo\n");
+            int Tarefa = scanf.nextInt();
+            if (Tarefa==1)
+                atacaPais();
+            else if (Tarefa==2)
+                compraArmamento();
+            else if (Tarefa==3)
+                checaGeral();
+            else if (Tarefa==4)
+                break;
+            else
+                System.out.println("NÚMERO INVÁLIDO, DIGITE NOVAMENTE!");
+        }
+        System.out.println("Obrigado por jogar o WorldWarRPG conosco!");
+        System.out.println("Seu SCORE FINAL foi de: " + scoreFinal() + " pontos"());
     }
 }
 
