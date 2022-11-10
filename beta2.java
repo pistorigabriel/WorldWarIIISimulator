@@ -7,6 +7,12 @@ class Alianca {
     Alianca (String nomeBloco) {
         bloco = nomeBloco;
     }
+    public void atacaPais(){
+        System.out.println("Por qual meio você deseja fazer sua investida?\n");
+        System.out.println("1. Água\n ---(Dica: é possível atacar qualquer país do globo usando sua Marinha, porém o custo da frota é moderado e a chance de êxito é baixa.");
+        System.out.println("2. Terra\n ---(Dica: só é possível atacar países do MESMO continente país usando seu Exército, porém o custo da frota é baixo porém a chance de êxito é alta.");
+        System.out.println("3. Ar\n ---(Dica: é possível atacar qualquer país do globo usando sua Aeronáutica, porém o custo da frota é alto e a chance de êxito é moderada.");
+    }
 
     private Paises getSede(String AliancaM){
         return AliancaM.coligacao[0];
