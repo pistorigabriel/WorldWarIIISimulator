@@ -43,7 +43,7 @@ public class Alianca {
     public double scoreFinal(){
         double f = 0;
         f += reserva*1.5;
-        f += coligacao.size()*3;
+        f += coligacao.size()*300;
         f += poder*2;
         return f;
     }
@@ -77,14 +77,19 @@ public class Alianca {
         }
     }
     public void executaCompra(ForcasArmadas Veiculo, int tipoCompra){
-        reserva -= Veiculo.getCusto();
-        poder += Veiculo.getPoder();
-        if (tipoCompra==1) // Padrão (Poder)
-            poder *= 1 + 20/100;
-        else if (tipoCompra==2) // Cargueiro (Capacidade)
-            capacidadeBelica += 2;
-        else if (tipoCompra==3) // Destroyer (Chance de Êxito)
-            poder *= 1 + 15/50;
+        if (Veiculo.getCusto()<=reserva) {
+            reserva -= Veiculo.getCusto();
+            poder += Veiculo.getPoder();
+            System.out.println("Como você tinha recursos na reserva, sua compra foi feita com SUCESSO!");
+            if (tipoCompra==1) // Padrão (Poder)
+                poder *= 1 + 20/100;
+            else if (tipoCompra==2) // Cargueiro (Capacidade)
+                capacidadeBelica += 2;
+            else if (tipoCompra==3) // Destroyer (Chance de Êxito)
+                poder *= 1 + 15/50;
+        }
+        else
+            System.out.println("Infelizmente sua compra NÃO foi executada pois você não tem saldo na reserva.");
     }
 }
 
