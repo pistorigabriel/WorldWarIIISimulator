@@ -3,7 +3,7 @@ Nosso trabalho foi inspirado no jogo de tabuleiro WAR. Tentamos colocar mais pa�
 
 Instruções com mais detalhes serão dadas no desenrolar do jogo.
 
-Informções úteis:
+Informações úteis:
 
 -Você começa o jogo com $1000 na reserva e recebe $300 a cada país conquistado
 
